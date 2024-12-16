@@ -1,2 +1,2 @@
-# Gest-oVagas
+# GestãoVagas
 Aplicação de Gestão de Vagas
