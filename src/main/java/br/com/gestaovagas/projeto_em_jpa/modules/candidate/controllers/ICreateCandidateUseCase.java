@@ -19,5 +19,5 @@ public interface ICreateCandidateUseCase {
             }),
             @ApiResponse(responseCode = "400", description = "Usuário já existe")
     })
-    public ResponseEntity<Object> create(@Valid @RequestBody CandidateEntity candidateEntity);
+    ResponseEntity<Object> create(@Valid @RequestBody CandidateEntity candidateEntity);
 }
