@@ -19,7 +19,7 @@ import java.util.Arrays;
 @Service
 public class AuthCompanyUseCase {
 
-    @Value("${projeto.jwtSecret}")
+    @Value("${security.token.secret}")
     private String secretKey;
 
     @Autowired

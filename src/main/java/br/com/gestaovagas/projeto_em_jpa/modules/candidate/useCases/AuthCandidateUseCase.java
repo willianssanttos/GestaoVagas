@@ -20,7 +20,7 @@ import com.auth0.jwt.algorithms.Algorithm;
 @Service
 public class AuthCandidateUseCase {
 
-    @Value("${projeto.jwtSecret}")
+    @Value("${security.token.secret.candidate}")
     private String secretKey;
 
     @Autowired
