@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 import javax.security.sasl.AuthenticationException;
 
-import br.com.gestaovagas.projeto_em_jpa.modules.candidate.CandidateRepository;
+import br.com.gestaovagas.projeto_em_jpa.modules.candidate.repository.CandidateRepository;
 import br.com.gestaovagas.projeto_em_jpa.modules.candidate.dto.AuthCandidateRequestDTO;
 import br.com.gestaovagas.projeto_em_jpa.modules.candidate.dto.AuthCandidateResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,5 @@
 package br.com.gestaovagas.projeto_em_jpa.modules.candidate.entity;
 
-import br.com.gestaovagas.projeto_em_jpa.modules.candidate.CandidateEntity;
 import br.com.gestaovagas.projeto_em_jpa.modules.company.entities.JobEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,6 @@
 package br.com.gestaovagas.projeto_em_jpa.modules.candidate.controllers;
 
-import br.com.gestaovagas.projeto_em_jpa.modules.candidate.CandidateEntity;
+import br.com.gestaovagas.projeto_em_jpa.modules.candidate.entity.CandidateEntity;
 import br.com.gestaovagas.projeto_em_jpa.modules.candidate.useCases.CreateCandidateUseCase;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

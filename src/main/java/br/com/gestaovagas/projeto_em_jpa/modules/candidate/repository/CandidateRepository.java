@@ -1,5 +1,6 @@
-package br.com.gestaovagas.projeto_em_jpa.modules.candidate;
+package br.com.gestaovagas.projeto_em_jpa.modules.candidate.repository;
 
+import br.com.gestaovagas.projeto_em_jpa.modules.candidate.entity.CandidateEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

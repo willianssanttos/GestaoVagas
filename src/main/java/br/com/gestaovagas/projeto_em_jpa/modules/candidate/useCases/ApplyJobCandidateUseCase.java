@@ -1,6 +1,6 @@
 package br.com.gestaovagas.projeto_em_jpa.modules.candidate.useCases;
 
-import br.com.gestaovagas.projeto_em_jpa.modules.candidate.CandidateRepository;
+import br.com.gestaovagas.projeto_em_jpa.modules.candidate.repository.CandidateRepository;
 import br.com.gestaovagas.projeto_em_jpa.modules.candidate.entity.ApplyJobEntity;
 import br.com.gestaovagas.projeto_em_jpa.modules.candidate.repository.ApplyJobRepository;
 import br.com.gestaovagas.projeto_em_jpa.modules.company.repositories.JobRepository;
