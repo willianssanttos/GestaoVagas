@@ -1,7 +1,7 @@
 package br.com.gestaovagas.projeto_em_jpa.modules.candidate.useCases;
 
-import br.com.gestaovagas.projeto_em_jpa.modules.candidate.CandidateEntity;
-import br.com.gestaovagas.projeto_em_jpa.modules.candidate.CandidateRepository;
+import br.com.gestaovagas.projeto_em_jpa.modules.candidate.entity.CandidateEntity;
+import br.com.gestaovagas.projeto_em_jpa.modules.candidate.repository.CandidateRepository;
 import br.com.gestaovagas.projeto_em_jpa.modules.exceptions.UserFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

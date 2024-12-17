@@ -1,6 +1,6 @@
 package br.com.gestaovagas.projeto_em_jpa.modules.candidate.controllers;
 
-import br.com.gestaovagas.projeto_em_jpa.modules.candidate.CandidateEntity;
+import br.com.gestaovagas.projeto_em_jpa.modules.candidate.entity.CandidateEntity;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 public interface ICreateCandidateUseCase {
 
-    @Operation(summary = "Cadastro de candito", description = "Essa função é responsável por cadastrar um candidato")
+    @Operation(summary = "Cadastro de candidato", description = "Essa função é responsável por cadastrar um candidato")
     @ApiResponses({
             @ApiResponse(responseCode = "200", content = {
                     @Content(schema = @Schema(implementation = CandidateEntity.class))
