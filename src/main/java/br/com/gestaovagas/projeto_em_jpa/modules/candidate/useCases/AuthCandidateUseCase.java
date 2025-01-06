@@ -35,7 +35,13 @@ public class AuthCandidateUseCase {
                 .orElseThrow(() -> {
                     throw new UsernameNotFoundException("Username/password incorrect");
                 });
-        //s
+
+        var passwordMatches = this.passwordEncoder
+                .matches(authCandidateRequestDTO.password(), candidate.getPassword());
+
+        if (!passwordMatches){
+            throw new AuthenticationException();
+        }
 
         var roles = Arrays.asList("CANDIDATE");
 
@@ -43,7 +49,7 @@ public class AuthCandidateUseCase {
         var expiresIn = Instant.now().plus(Duration.ofMinutes(10));
         var token = JWT.create()
                 .withIssuer("javagas")
-               // .withSubject(candidate.getId().toString())
+                .withSubject(candidate.getId().toString())
                 .withClaim("roles", roles)
                 .withExpiresAt(expiresIn)
                 .sign(algorithm);
