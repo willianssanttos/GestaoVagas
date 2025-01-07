@@ -66,7 +66,7 @@ public class CandidateController implements ICreateCandidateUseCase{
         return this.listAllJobsByFilterUseCase.execute(filter);
     }
 
-    @PostMapping("/job/apply")
+    @PostMapping("/jobs/apply")
     @PreAuthorize("hasRole('CANDIDATE')")
     @SecurityRequirement(name = "jwt_auth")
     public ResponseEntity<Object> applyJob(HttpServletRequest request, @RequestBody UUID idJob) {
