@@ -84,7 +84,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"username\": \"pedrojunior\",\n    \"password\": \"@Santos123\"\n}",
+									"raw": "{\n\t\"username\": \"Julia\",\n    \"password\": \"@Caindo.124\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -103,6 +103,46 @@
 									]
 								},
 								"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Listar",
+					"item": [
+						{
+							"name": "Listar Vagas",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJqYXZhZ2FzIiwic3ViIjoiNjZjNjRmYTItMDJkOC00NDgwLTgyZTEtZTgzYWZlZjI3MTM5Iiwicm9sZXMiOlsiQ0FORElEQVRFIl0sImV4cCI6MTczNjI2OTMxMH0.aNhS8Md3lKepiCdNABZyM9yg_fs6ZtggQpykyfYXzc8",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/candidate/job?filter=java",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"candidate",
+										"job"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": "java"
+										}
+									]
+								}
 							},
 							"response": []
 						}
@@ -188,7 +228,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJqYXZhZ2FzIiwiZXhwIjoxNzM0NDM4Mzg0LCJzdWIiOiIyNzZiMDMzYi1kZjc4LTRlNjAtYjRiZS1jZjEyZGE4ZTI5NzEiLCJyb2xlcyI6WyJDT01QQU5ZIl19.dgQtAtR7Kr4Nnxg6INfXskrH06YYrkXBp7o7Mvog2cA",
+											"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJqYXZhZ2FzIiwiZXhwIjoxNzM2MjY4NzUxLCJzdWIiOiIyNzZiMDMzYi1kZjc4LTRlNjAtYjRiZS1jZjEyZGE4ZTI5NzEiLCJyb2xlcyI6WyJDT01QQU5ZIl19.uNWsJNWEfl0i9cwJdxvMU4pfPqRJDhYgmRYZFaTwh6Y",
 											"type": "string"
 										}
 									]
@@ -242,7 +282,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n\t\"username\": \"IO_company\",\n    \"email\": \"iocompany@tecnology.com\",\n    \"password\": \"@Santos123\",\n    \"name\": \"IO company tecnology\",\n    \"description\": \"Empresa referencia em tecnologia\",\n    \"website\": \"https://iocompanytecnology.com\"\n}",
+									"raw": "{\n\t\"username\": \"solucoes\",\n    \"email\": \"solucoes@tecnology.com\",\n    \"password\": \"@Santos123\",\n    \"name\": \"Soluções tecnology\",\n    \"description\": \"Empresa referencia em soluções tecnologicas\",\n    \"website\": \"https://solucoestecnology.com\"\n}",
 									"options": {
 										"raw": {
 											"language": "json"
