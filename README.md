@@ -23,6 +23,7 @@
 -  PostgreSQL : Banco de dados relacional utilizado.
 ----------------------
 ### Requisitos para Execução
+
 - Java 17 ou superior
 - Maven 3.8+
 -  Docker (para rodar a aplicação via containers, se necessário)
